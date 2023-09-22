@@ -7,6 +7,8 @@ public class SpaceshipMovement : MonoBehaviour
     Transform SpaceshipTransform;
 
     private Vector3 m_movement;
+
+    public float SpaceshipSpeedModifier = 0.05f;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +26,16 @@ public class SpaceshipMovement : MonoBehaviour
 
     private void Update()
     {
-        SpaceshipTransform.position += m_movement;
+        Vector3 pos = SpaceshipTransform.position;
+
+        pos += m_movement * SpaceshipSpeedModifier;
+
+        if (pos.x > 12)
+            pos.Set(12, 0f, 0f);
+        if (pos.x < -12)
+            pos.Set(-12, 0f, 0f);
+
+        SpaceshipTransform.position = pos;
     }
 
 }

@@ -1057,6 +1057,7 @@ GameObject:
   - component: {fileID: 7200735600995727439}
   - component: {fileID: 6156801717831548220}
   - component: {fileID: 6707789495578810732}
+  - component: {fileID: 2249493766221472418}
   m_Layer: 0
   m_Name: StarSparrow4
   m_TagString: Untagged
@@ -1130,6 +1131,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2249493766221472418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4415021982663066435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5faf979d5e3a61643adbfff0de63a37e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4701197008843391940
 GameObject:
   m_ObjectHideFlags: 0
