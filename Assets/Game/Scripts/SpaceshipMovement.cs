@@ -24,7 +24,7 @@ public class SpaceshipMovement : MonoBehaviour
         m_movement.Normalize();
     }
 
-    private void Update()
+    void Update()
     {
         Vector3 pos = SpaceshipTransform.position;
 
