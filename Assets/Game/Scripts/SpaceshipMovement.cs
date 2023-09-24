@@ -8,7 +8,15 @@ public class SpaceshipMovement : MonoBehaviour
 
     private Vector3 m_movement;
 
+    private Vector3 m_rotation;
+
     public float SpaceshipSpeedModifier = 0.05f;
+
+    public float MinimalPositionOnX = -12f;
+    public float MaximalPositionOnX =  12f;
+
+    public float targetRotationAngleWhenTurning = 45f;
+    public float rotationTime = 0.3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +28,10 @@ public class SpaceshipMovement : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
 
+        var targetRotation = 45 * -horizontal;
+        Quaternion qtargetRotation = Quaternion.Euler(SpaceshipTransform.rotation.x, SpaceshipTransform.rotation.y, targetRotation);
+        SpaceshipTransform.rotation = Quaternion.Lerp(SpaceshipTransform.rotation, qtargetRotation, Time.deltaTime / rotationTime);
+
         m_movement.Set(horizontal, 0f, 0f);
         m_movement.Normalize();
     }
@@ -30,10 +42,10 @@ public class SpaceshipMovement : MonoBehaviour
 
         pos += m_movement * SpaceshipSpeedModifier;
 
-        if (pos.x > 12)
-            pos.Set(12, 0f, 0f);
-        if (pos.x < -12)
-            pos.Set(-12, 0f, 0f);
+        if (pos.x > MaximalPositionOnX)
+            pos.Set(MaximalPositionOnX, 0f, 0f);
+        if (pos.x < MinimalPositionOnX)
+            pos.Set(MinimalPositionOnX, 0f, 0f);
 
         SpaceshipTransform.position = pos;
     }
