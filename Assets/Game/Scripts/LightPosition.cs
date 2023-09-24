@@ -26,8 +26,6 @@ public class LightPosition : MonoBehaviour
         line.Normalize();
         line *= 3;
 
-        Debug.Log(line);
-
         m_transform.position = starPos + line;
     }
 }
