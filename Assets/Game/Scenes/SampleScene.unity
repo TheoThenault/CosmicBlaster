@@ -2074,6 +2074,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1932081979201194282, guid: 88f172eb2e0ff9a4c9d409924a0c6ae9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346112217239951069, guid: 88f172eb2e0ff9a4c9d409924a0c6ae9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346112217239951069, guid: 88f172eb2e0ff9a4c9d409924a0c6ae9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.587
+      objectReference: {fileID: 0}
     - target: {fileID: 4415021982663066435, guid: 88f172eb2e0ff9a4c9d409924a0c6ae9, type: 3}
       propertyPath: m_Name
       value: Spaceship
