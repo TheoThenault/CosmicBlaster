@@ -19,11 +19,11 @@ public class SpaceshipFire : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        float fire = Input.GetAxis("Fire1");
+        bool fire = Input.GetButton("Fire1");
 
-        if( fire > 0.9 ) 
+        if(fire) 
         {
             float delta = Time.time - lastFire;
             if(delta > FiringDelay )
@@ -34,7 +34,8 @@ public class SpaceshipFire : MonoBehaviour
                     if (newBullet != null)
                     {
                         newBullet.SetActive(true);
-                        Transform transform = newBullet.GetComponent<Transform>();
+                        BulletBehavior behavior = newBullet.GetComponent<BulletBehavior>();
+                        behavior.AsteroidsManager = this.AsteroidsManager;
                     }
                 }
                 lastFire = Time.time;
