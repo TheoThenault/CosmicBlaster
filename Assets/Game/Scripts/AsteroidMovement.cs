@@ -13,7 +13,7 @@ public class AsteroidMovement : MonoBehaviour
 
     Transform transform;
 
-    public GameObject AsteroidsParent = null;
+    public GameObject AsteroidsManager = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,9 +41,9 @@ public class AsteroidMovement : MonoBehaviour
 
         if(pos.z < -20)
         {
-            if (AsteroidsParent != null)
+            if (AsteroidsManager != null)
             {
-                SpawnAsteroids script = AsteroidsParent.GetComponent<SpawnAsteroids>();
+                SpawnAsteroids script = AsteroidsManager.GetComponent<SpawnAsteroids>();
                 if (script != null)
                 {
                     script.DestroyAsteroid(this.gameObject);

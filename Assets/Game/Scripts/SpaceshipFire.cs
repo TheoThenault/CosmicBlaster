@@ -10,6 +10,8 @@ public class SpaceshipFire : MonoBehaviour
 
     private float lastFire = 0f;
 
+    public GameObject AsteroidsManager = null;
+
     // Start is called before the first frame update
     void Start()
     {

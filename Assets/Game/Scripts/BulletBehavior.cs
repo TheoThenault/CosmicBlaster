@@ -12,6 +12,8 @@ public class BulletBehavior : MonoBehaviour
 
     public GameObject Spaceship = null;
 
+    public GameObject AsteroidsManager = null;
+
     private Vector3 movementDirection = new Vector3(0f, -1f, 0f);
 
     // Start is called before the first frame update
