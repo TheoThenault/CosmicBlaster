@@ -11,14 +11,10 @@ public class AsteroidMovement : MonoBehaviour
     public float MinimalPositionOnX = -12f;
     public float MaximalPositionOnX = 12f;
 
-    Transform transform;
-
     public GameObject AsteroidsManager = null;
     // Start is called before the first frame update
     void Start()
     {
-        transform = GetComponent<Transform>();
-
         float positionOnX = Random.Range(MinimalPositionOnX, MaximalPositionOnX);
 
         float newScale = Random.Range(1f, 3f);
