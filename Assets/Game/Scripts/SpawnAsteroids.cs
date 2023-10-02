@@ -30,4 +30,10 @@ public class SpawnAsteroids : MonoBehaviour
             }
         }
     }
+
+    public void DestroyAsteroid(GameObject Asteroid)
+    {
+        Destroy(Asteroid);
+        AsteroidCount--;
+    }
 }

@@ -46,10 +46,9 @@ public class AsteroidMovement : MonoBehaviour
                 SpawnAsteroids script = AsteroidsParent.GetComponent<SpawnAsteroids>();
                 if (script != null)
                 {
-                    script.AsteroidCount--;
+                    script.DestroyAsteroid(this.gameObject);
                 }
             }
-            Destroy(this.gameObject);
         }
     }
 }
