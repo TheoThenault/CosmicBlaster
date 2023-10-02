@@ -1066,7 +1066,7 @@ GameObject:
   - component: {fileID: 922465525}
   - component: {fileID: 922465526}
   m_Layer: 0
-  m_Name: Asteroides
+  m_Name: AsteroidsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnRate: 5
   MaxAsteroidCount: 10
-  AsteroidPrefab: {fileID: 4705106252456515464, guid: 48117c8bfae9c4a4189b34da65d67840, type: 3}
+  AsteroidPrefab: {fileID: 3876299068861579772, guid: 48117c8bfae9c4a4189b34da65d67840, type: 3}
 --- !u!1 &934281178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5990971505748272316, guid: 7005d71343baaa54fa63b2670e73ca23, type: 3}
@@ -2088,6 +2088,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spaceship
       objectReference: {fileID: 0}
+    - target: {fileID: 6089817394593528286, guid: 88f172eb2e0ff9a4c9d409924a0c6ae9, type: 3}
+      propertyPath: AsteroidsManager
+      value: 
+      objectReference: {fileID: 922465524}
     - target: {fileID: 7200735600995727439, guid: 88f172eb2e0ff9a4c9d409924a0c6ae9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12
