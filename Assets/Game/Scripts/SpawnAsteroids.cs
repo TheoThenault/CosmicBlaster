@@ -10,7 +10,7 @@ public class SpawnAsteroids : MonoBehaviour
 
     public int MaxAsteroidCount = 10;
 
-    public GameObject AsteroidPrefab = null;
+    public AsteroidMovement AsteroidPrefab = null;
 
     // Start is called before the first frame update
     IEnumerator Start()
@@ -28,8 +28,7 @@ public class SpawnAsteroids : MonoBehaviour
         {
             if(AsteroidPrefab != null)
             {
-                GameObject newAsteroid = Instantiate(AsteroidPrefab);
-                newAsteroid.SetActive(true);
+                var newAsteroid = Instantiate(AsteroidPrefab);
                 newAsteroid.AsteroidsManager = this.gameObject;
                 AsteroidCount++;
             }
