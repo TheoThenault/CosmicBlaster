@@ -49,4 +49,23 @@ public class BulletBehavior : MonoBehaviour
             }
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision != null)
+        {
+            if(collision.gameObject.tag == "Asteroid")
+            {
+                Destroy(this.gameObject);
+                if (AsteroidsManager != null)
+                {
+                    SpawnAsteroids script = AsteroidsManager.GetComponent<SpawnAsteroids>();
+                    if (script != null)
+                    { 
+                        script.DestroyAsteroid(collision.gameObject);
+                    }
+                }
+            }
+        }
+    }
 }
