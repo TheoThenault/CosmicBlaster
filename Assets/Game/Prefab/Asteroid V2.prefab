@@ -261,10 +261,10 @@ GameObject:
   - component: {fileID: 4558450238531817888}
   - component: {fileID: 3774921099689788300}
   - component: {fileID: 3876299068861579772}
-  - component: {fileID: 861231132889003273}
+  - component: {fileID: 8120522940928077176}
   m_Layer: 0
   m_Name: Asteroid V2
-  m_TagString: Enemy
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -342,7 +342,7 @@ MonoBehaviour:
   MinimalPositionOnX: -12
   MaximalPositionOnX: 12
   AsteroidsParent: {fileID: 0}
---- !u!136 &861231132889003273
+--- !u!136 &8120522940928077176
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -359,12 +359,12 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.2788568
-  m_Height: 4.1308236
+  m_Radius: 1.311098
+  m_Height: 3.9020617
   m_Direction: 1
-  m_Center: {x: 0.0059370995, y: 0.22222447, z: -0.06503844}
+  m_Center: {x: 0, y: 0.2794448, z: 0.0100136995}
 --- !u!1 &5456913564332423167
 GameObject:
   m_ObjectHideFlags: 0
