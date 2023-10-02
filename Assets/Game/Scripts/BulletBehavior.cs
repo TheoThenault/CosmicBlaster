@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.InputSystem.Controls;
 
 public class BulletBehavior : MonoBehaviour
 {
@@ -15,6 +17,8 @@ public class BulletBehavior : MonoBehaviour
     public GameObject AsteroidsManager = null;
 
     private Vector3 movementDirection = new Vector3(0f, -1f, 0f);
+
+    public TMP_Text Score = null;
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +67,11 @@ public class BulletBehavior : MonoBehaviour
                     if (script != null)
                     { 
                         script.DestroyAsteroid(collision.gameObject);
+                        if(Score != null)
+                        {
+                            int scoreValue = int.Parse(Score.text) + 1;
+                            Score.text = scoreValue.ToString();
+                        }
                     }
                 }
             }
