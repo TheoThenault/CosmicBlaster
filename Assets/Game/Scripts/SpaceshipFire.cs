@@ -28,7 +28,7 @@ public class SpaceshipFire : MonoBehaviour
             {
                 if (Bullet != null)
                 {
-                    GameObject newBullet = Instantiate(Bullet, this.transform, true);
+                    GameObject newBullet = Instantiate(Bullet);
                     if (newBullet != null)
                     {
                         newBullet.SetActive(true);

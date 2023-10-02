@@ -18,6 +18,11 @@ public class BulletBehavior : MonoBehaviour
     void Start()
     {
         m_transform = GetComponent<Transform>(); 
+        if(Spaceship != null && m_transform != null)
+        {
+            Vector3 SpaceshipPosition = Spaceship.transform.position;
+            m_transform.position = SpaceshipPosition;
+        }
     }
 
     // Update is called once per frame
