@@ -6,16 +6,20 @@ public class SpawnAsteroids : MonoBehaviour
 {
     public float SpawnRate = 2f;
 
-    public int AsteroidCount = 0;
+    private int AsteroidCount = 0;
 
     public int MaxAsteroidCount = 10;
 
     public GameObject AsteroidPrefab = null;
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
-        InvokeRepeating("SpawnAsteroid", 0f, SpawnRate);
+        while(true)
+        {
+            yield return new WaitForSeconds(SpawnRate);
+            SpawnAsteroid();
+        }
     }
 
     void SpawnAsteroid()
