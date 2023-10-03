@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 
 public class SpaceshipFire : MonoBehaviour
@@ -13,8 +12,6 @@ public class SpaceshipFire : MonoBehaviour
     private float lastFire = 0f;
 
     public GameObject AsteroidsManager = null;
-
-    public TMP_Text Score = null;
 
     // Start is called before the first frame update
     void Start()

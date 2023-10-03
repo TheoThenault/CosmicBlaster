@@ -502,6 +502,8 @@ MonoBehaviour:
   BulletVelocity: 10
   MaxDistance: 1000
   Spaceship: {fileID: 4415021982663066435}
+  AsteroidsManager: {fileID: 0}
+  Score: {fileID: 0}
 --- !u!1 &1953344603461966660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,7 +1200,7 @@ Transform:
   m_GameObject: {fileID: 4415021982663066435}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6073475, y: 0, z: -1.5476446}
+  m_LocalPosition: {x: -12, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1287,6 +1289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1932081979201194282}
   FiringDelay: 0.5
+  AsteroidsManager: {fileID: 0}
+  Score: {fileID: 0}
 --- !u!1 &4701197008843391940
 GameObject:
   m_ObjectHideFlags: 0
