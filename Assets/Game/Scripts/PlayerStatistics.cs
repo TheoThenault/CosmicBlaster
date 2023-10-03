@@ -9,12 +9,15 @@ public class PlayerStatistics : MonoBehaviour
 
     private int m_health = 5;
 
-    public TMP_Text ScoreTextField = null;
+    private int m_maxHealth = 5;
+
+    public UIController UserInterfaceController = null;
 
     // Start is called before the first frame update
     void Start()
     {
         UpdateScoreTextField();
+        UpdateHealthGauge();
     }
 
     
@@ -27,14 +30,24 @@ public class PlayerStatistics : MonoBehaviour
     public void removeHealth(int diff = 1)
     {
         this.m_health -= diff;
-        Debug.Log(m_health.ToString());
+        UpdateHealthGauge();
     }
 
     private void UpdateScoreTextField()
     {
-        if (ScoreTextField != null)
+        if (UserInterfaceController != null)
         {
-            ScoreTextField.text = m_score.ToString();
+            UserInterfaceController.SetScore(m_score);
+        }
+    }
+
+    private void UpdateHealthGauge()
+    {
+        if (UserInterfaceController != null)
+        {
+            float val = m_health / (m_maxHealth / 1.0f);
+            //Debug.Log(val);
+            UserInterfaceController.SetGaugeFill(val);
         }
     }
 
