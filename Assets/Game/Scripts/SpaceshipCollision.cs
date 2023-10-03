@@ -10,6 +10,8 @@ public class SpaceshipCollision : MonoBehaviour
 
     public GameObject Explosion = null;
 
+    public AudioSource ExplosionSound = null;
+
     private bool m_spaceshipDestroyed = false;
 
     // Start is called before the first frame update
@@ -37,7 +39,12 @@ public class SpaceshipCollision : MonoBehaviour
                         m_spaceshipDestroyed = true;
 
                         if(Explosion != null)
+                        {
                             Instantiate(Explosion, transform.position, transform.rotation);
+
+                            if(ExplosionSound != null)
+                                Instantiate(ExplosionSound, transform.position, transform.rotation).PlayDelayed(0.1f);
+                        }
 
                         Destroy(this.gameObject);
                     }

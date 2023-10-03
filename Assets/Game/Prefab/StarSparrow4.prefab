@@ -1571,6 +1571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AsteroidsManager: {fileID: 0}
   Explosion: {fileID: 6628867199803465035, guid: fcf66bae0d7243c42957d81492dc8ca3, type: 3}
+  ExplosionSound: {fileID: 6551824671523840323, guid: c013cc93f95bb044fa9724479cf28a11, type: 3}
 --- !u!1 &4701197008843391940
 GameObject:
   m_ObjectHideFlags: 0
