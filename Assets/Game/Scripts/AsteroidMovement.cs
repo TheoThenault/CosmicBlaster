@@ -11,7 +11,13 @@ public class AsteroidMovement : MonoBehaviour
     public float MinimalPositionOnX = -12f;
     public float MaximalPositionOnX = 12f;
 
-    public GameObject AsteroidsManager = null;
+    private GameObject AsteroidsManager = null;
+
+    public void Init(GameObject _AsteroidsManager)
+    {
+        this.AsteroidsManager = _AsteroidsManager;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

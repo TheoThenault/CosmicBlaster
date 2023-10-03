@@ -29,7 +29,7 @@ public class SpawnAsteroids : MonoBehaviour
             if(AsteroidPrefab != null)
             {
                 var newAsteroid = Instantiate(AsteroidPrefab);
-                newAsteroid.AsteroidsManager = this.gameObject;
+                newAsteroid.Init(this.gameObject);
                 AsteroidCount++;
             }
         }
