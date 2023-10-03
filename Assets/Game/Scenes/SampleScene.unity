@@ -1335,8 +1335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fca64fdb20919e94baa0ef3fa08526b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnRate: 5
-  MaxAsteroidCount: 10
+  SpawnRate: 1
+  MaxAsteroidCount: 20
   AsteroidPrefab: {fileID: 3876299068861579772, guid: 48117c8bfae9c4a4189b34da65d67840, type: 3}
 --- !u!1 &934281178 stripped
 GameObject:
@@ -2380,6 +2380,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2263321519687599330, guid: 88f172eb2e0ff9a4c9d409924a0c6ae9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2346112217239951069, guid: 88f172eb2e0ff9a4c9d409924a0c6ae9, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.01
@@ -2392,6 +2396,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spaceship
       objectReference: {fileID: 0}
+    - target: {fileID: 4644373200662793180, guid: 88f172eb2e0ff9a4c9d409924a0c6ae9, type: 3}
+      propertyPath: Explosion
+      value: 
+      objectReference: {fileID: 1700703231066584942, guid: fcf66bae0d7243c42957d81492dc8ca3, type: 3}
+    - target: {fileID: 4644373200662793180, guid: 88f172eb2e0ff9a4c9d409924a0c6ae9, type: 3}
+      propertyPath: AsteroidsManager
+      value: 
+      objectReference: {fileID: 922465526}
     - target: {fileID: 6089817394593528286, guid: 88f172eb2e0ff9a4c9d409924a0c6ae9, type: 3}
       propertyPath: AsteroidsManager
       value: 
