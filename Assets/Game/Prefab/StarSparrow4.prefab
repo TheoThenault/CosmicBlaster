@@ -1543,6 +1543,7 @@ MonoBehaviour:
   Bullet: {fileID: 1932081979201194282}
   FiringDelay: 0.5
   AsteroidsManager: {fileID: 0}
+  FireSound: {fileID: 496694881829868564, guid: ede47e59fe7758540b2048e2bbee563e, type: 3}
 --- !u!114 &3124267108796295597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1555,7 +1556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60a0754581623b40b12ecc5573063cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreTextField: {fileID: 0}
+  UserInterfaceController: {fileID: 0}
 --- !u!114 &4644373200662793180
 MonoBehaviour:
   m_ObjectHideFlags: 0
