@@ -7,6 +7,11 @@ TagManager:
   - Asteroid
   - Bullet
   - Spaceship
+  - pyramid
+  - plane
+  - EnemyBullet
+  - EnemySpaceship
+  - AsteroidsManager
   layers:
   - Default
   - TransparentFX
