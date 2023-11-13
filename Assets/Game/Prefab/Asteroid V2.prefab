@@ -338,10 +338,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AsteroidSpeed: 0.03
-  StartPosition: 120
+  StartPosition: 360
   MinimalPositionOnX: -12
   MaximalPositionOnX: 12
-  AsteroidsParent: {fileID: 0}
 --- !u!136 &8120522940928077176
 CapsuleCollider:
   m_ObjectHideFlags: 0

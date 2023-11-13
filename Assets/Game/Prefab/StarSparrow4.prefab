@@ -681,6 +681,7 @@ GameObject:
   - component: {fileID: 5694734761917565667}
   - component: {fileID: 4502693218909967224}
   - component: {fileID: 8934749231347909947}
+  - component: {fileID: 8945463962150521163}
   m_Layer: 0
   m_Name: Collider46
   m_TagString: Spaceship
@@ -737,6 +738,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 4644373200662793180}
+--- !u!54 &8945463962150521163
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032683004811684899}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2263321519687599330
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +854,7 @@ GameObject:
   - component: {fileID: 2334808025851382624}
   - component: {fileID: 2430915390918316789}
   - component: {fileID: 5959447360143254142}
+  - component: {fileID: 8547750801076784023}
   m_Layer: 0
   m_Name: Collider47
   m_TagString: Spaceship
@@ -882,6 +911,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 4644373200662793180}
+--- !u!54 &8547750801076784023
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2656637613355527935}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2720733103498284218
 GameObject:
   m_ObjectHideFlags: 0

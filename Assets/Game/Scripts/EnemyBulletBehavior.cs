@@ -20,8 +20,6 @@ public class EnemyBulletBehavior : MonoBehaviour
 
     private Vector3 movementDirection = new Vector3(0f, 1f, 0f);
 
-    private PlayerStatistics PlayerStatistics = null;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -34,10 +32,11 @@ public class EnemyBulletBehavior : MonoBehaviour
                 m_transform.position = SpaceshipPosition;
             }
         }
-        if(Spaceship != null)
-        {
-            PlayerStatistics = Spaceship.GetComponent<PlayerStatistics>();
-        }
+    }
+
+    public void Init(GameObject _spaceship)
+    {
+        Spaceship = _spaceship;
     }
 
     // Update is called once per frame
@@ -64,8 +63,13 @@ public class EnemyBulletBehavior : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision)
-    {     
-        if(collision != null && collision.gameObject != null && collision.gameObject.tag == "Spaceship")
+    {
+        string tag = collision.gameObject.tag;
+        if (tag == "EnemySpaceship" || tag == "Bullet" || tag == "EnemyBullet")
+            return;
+
+        Debug.Log("Bullet POV: " + collision.gameObject.tag);
+        if(collision != null && collision.gameObject != null)
         {
             Destroy(this.gameObject);
         }

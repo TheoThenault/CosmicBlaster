@@ -8,9 +8,9 @@ public class EnemySpaceshipCollision : MonoBehaviour
 
     public AudioSource ExplosionSound = null;
 
-    private bool m_spaceshipDestroyed = false;
-
     public int health = 3;
+
+    private EnemyManager m_manager;
 
     // Start is called before the first frame update
     void Start()
@@ -18,19 +18,24 @@ public class EnemySpaceshipCollision : MonoBehaviour
 
     }
 
+    public void Init (EnemyManager manager)
+    {
+        m_manager = manager;   
+    }
+
     public void HandleCollisions(Collision collision)
     {
-        if (!m_spaceshipDestroyed && collision != null && collision.gameObject != null && collision.gameObject.tag != "EnemyBullet" && collision.gameObject.tag != "Asteroid")
+        if (collision != null && collision.gameObject != null && collision.gameObject.tag != "EnemyBullet" && collision.gameObject.tag != "Asteroid")
         {
             if(collision.gameObject.tag == "Bullet")
             {
                 health--;
 
-                if (health > 0)
-                    return;
+                //if (health > 0)
+                //    return;
             }
 
-            Destroy(this.gameObject);
+            m_manager.DestroyEnemy(this.gameObject);
         }
     }
 }

@@ -15,10 +15,18 @@ public class EnemySpaceshipFire : MonoBehaviour
 
     public AudioSource FireSound = null;
 
+    private GameObject Spaceship = null;
+
     // Start is called before the first frame update
     void Start()
     {
         AsteroidsManager = GameObject.Find("AsteroidsManager");
+    }
+
+
+    public void Init(GameObject _spaceship)
+    {
+        Spaceship = _spaceship;
     }
 
     // Update is called once per frame
@@ -39,7 +47,7 @@ public class EnemySpaceshipFire : MonoBehaviour
                     {
                         newBullet.SetActive(true);
                         EnemyBulletBehavior behavior = newBullet.GetComponent<EnemyBulletBehavior>();
-
+                        behavior.Init(Spaceship);
                         PlayFireSound();
                     }
                 }

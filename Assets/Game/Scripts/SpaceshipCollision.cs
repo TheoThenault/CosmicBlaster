@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpaceshipCollision : MonoBehaviour
@@ -23,6 +24,9 @@ public class SpaceshipCollision : MonoBehaviour
 
     public void HandleCollisions(Collision collision)
     {
+        if(collision.gameObject.tag != "Spaceship")
+            Debug.Log("Spaceship POV: " + collision.gameObject.tag);
+
         if (!m_spaceshipDestroyed && collision != null && collision.gameObject != null && collision.gameObject.tag == "Asteroid")
         {
 
