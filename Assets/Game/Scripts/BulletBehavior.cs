@@ -78,6 +78,17 @@ public class BulletBehavior : MonoBehaviour
                 }
             }
         }
+
+        if (collision != null && collision.gameObject != null && collision.gameObject.tag == "EnemySpaceship")
+        {
+            Destroy(this.gameObject);
+
+            if (PlayerStatistics != null)
+            {
+                PlayerStatistics.AddScore(10);
+                PlayerStatistics.addHealth(2);
+            }
+        }
     }
 
 }

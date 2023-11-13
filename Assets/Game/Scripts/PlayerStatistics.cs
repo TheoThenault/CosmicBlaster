@@ -33,6 +33,14 @@ public class PlayerStatistics : MonoBehaviour
         UpdateHealthGauge();
     }
 
+    public void addHealth(int diff = 1)
+    {
+        this.m_health += diff;
+        if(this.m_health > m_maxHealth)
+            m_health = m_maxHealth;
+        UpdateHealthGauge();
+    }
+
     private void UpdateScoreTextField()
     {
         if (UserInterfaceController != null)
