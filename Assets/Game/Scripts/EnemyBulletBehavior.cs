@@ -68,7 +68,6 @@ public class EnemyBulletBehavior : MonoBehaviour
         if (tag == "EnemySpaceship" || tag == "Bullet" || tag == "EnemyBullet")
             return;
 
-        Debug.Log("Bullet POV: " + collision.gameObject.tag);
         if(collision != null && collision.gameObject != null)
         {
             Destroy(this.gameObject);

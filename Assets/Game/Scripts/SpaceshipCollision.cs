@@ -24,9 +24,6 @@ public class SpaceshipCollision : MonoBehaviour
 
     public void HandleCollisions(Collision collision)
     {
-        if(collision.gameObject.tag != "Spaceship")
-            Debug.Log("Spaceship POV: " + collision.gameObject.tag);
-
         if (!m_spaceshipDestroyed && collision != null && collision.gameObject != null && collision.gameObject.tag == "Asteroid")
         {
 
@@ -58,7 +55,6 @@ public class SpaceshipCollision : MonoBehaviour
 
         if (!m_spaceshipDestroyed && collision != null && collision.gameObject != null && collision.gameObject.tag == "EnemyBullet")
         {
-            Debug.Log("EnemyBullet");
             if (playerStatistics != null)
             {
                 playerStatistics.removeHealth();
