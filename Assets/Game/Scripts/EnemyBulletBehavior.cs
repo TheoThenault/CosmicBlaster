@@ -68,7 +68,6 @@ public class EnemyBulletBehavior : MonoBehaviour
         if(collision != null && collision.gameObject != null && collision.gameObject.tag == "Spaceship")
         {
             Destroy(this.gameObject);
-            Debug.Log("HIT");
         }
     }
 

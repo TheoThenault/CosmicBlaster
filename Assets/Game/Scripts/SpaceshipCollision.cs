@@ -54,6 +54,7 @@ public class SpaceshipCollision : MonoBehaviour
 
         if (!m_spaceshipDestroyed && collision != null && collision.gameObject != null && collision.gameObject.tag == "EnemyBullet")
         {
+            Debug.Log("EnemyBullet");
             if (playerStatistics != null)
             {
                 playerStatistics.removeHealth();
@@ -72,6 +73,27 @@ public class SpaceshipCollision : MonoBehaviour
 
                     Destroy(this.gameObject);
                 }
+            }
+        }
+
+        if (!m_spaceshipDestroyed && collision != null && collision.gameObject != null && collision.gameObject.tag == "EnemySpaceship")
+        {
+            if (playerStatistics != null)
+            {
+                while(!playerStatistics.IsDead())
+                    playerStatistics.removeHealth();
+
+                m_spaceshipDestroyed = true;
+
+                if (Explosion != null)
+                {
+                    Instantiate(Explosion, transform.position, transform.rotation);
+
+                    if (ExplosionSound != null)
+                        Instantiate(ExplosionSound, transform.position, transform.rotation).PlayDelayed(0.1f);
+                }
+
+                Destroy(this.gameObject);
             }
         }
     }
