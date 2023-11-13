@@ -81,7 +81,7 @@ public class SpaceshipCollision : MonoBehaviour
             if (playerStatistics != null)
             {
                 while(!playerStatistics.IsDead())
-                    playerStatistics.removeHealth();
+                    playerStatistics.removeHealth(999);
 
                 m_spaceshipDestroyed = true;
 

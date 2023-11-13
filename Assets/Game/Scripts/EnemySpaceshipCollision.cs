@@ -32,8 +32,8 @@ public class EnemySpaceshipCollision : MonoBehaviour
             {
                 health--;
 
-                //if (health > 0)
-                //    return;
+                if (health > 0)
+                    return;
             }
 
             m_manager.DestroyEnemy(this.gameObject);
