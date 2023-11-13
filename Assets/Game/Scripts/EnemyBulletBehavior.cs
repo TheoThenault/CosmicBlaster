@@ -13,34 +13,31 @@ public class EnemyBulletBehavior : MonoBehaviour
 
     public GameObject Spaceship = null;
 
-    public GameObject AsteroidsManager = null;
+    public GameObject EnemySpaceship = null;
 
 
     private Transform m_transform = null;
 
-    private Vector3 movementDirection = new Vector3(0f, -1f, 0f);
+    private Vector3 movementDirection = new Vector3(0f, 1f, 0f);
 
     private PlayerStatistics PlayerStatistics = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        m_transform = GetComponent<Transform>(); 
-        if(Spaceship != null)
+        m_transform = GetComponent<Transform>();
+        if(EnemySpaceship != null)
         {
-            PlayerStatistics = Spaceship.GetComponent<PlayerStatistics>();
-
             if (m_transform != null)
             {
-                Vector3 SpaceshipPosition = Spaceship.transform.position;
+                Vector3 SpaceshipPosition = EnemySpaceship.transform.position;
                 m_transform.position = SpaceshipPosition;
             }
         }
-    }
-
-    public void Init(GameObject AsMan)
-    {
-        AsteroidsManager = AsMan;
+        if(Spaceship != null)
+        {
+            PlayerStatistics = Spaceship.GetComponent<PlayerStatistics>();
+        }
     }
 
     // Update is called once per frame
@@ -48,7 +45,7 @@ public class EnemyBulletBehavior : MonoBehaviour
     {
         if(m_transform != null) 
         { 
-            m_transform.Translate(movementDirection * BulletVelocity);
+            m_transform.Translate(new Vector3(0f, 1f, 0f) * 0.1f);
 
             if(Spaceship != null)
             {
@@ -67,21 +64,11 @@ public class EnemyBulletBehavior : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision)
-    {
-        if(collision != null && collision.gameObject != null && collision.gameObject.tag == "Asteroid")
+    {     
+        if(collision != null && collision.gameObject != null && collision.gameObject.tag == "Spaceship")
         {
             Destroy(this.gameObject);
-            if (AsteroidsManager != null)
-            {
-                SpawnAsteroids script = AsteroidsManager.GetComponent<SpawnAsteroids>();
-                if (script != null)
-                { 
-                    script.DestroyAsteroid(collision.gameObject);
-
-                    if (PlayerStatistics != null)
-                        PlayerStatistics.AddScore();
-                }
-            }
+            Debug.Log("HIT");
         }
     }
 

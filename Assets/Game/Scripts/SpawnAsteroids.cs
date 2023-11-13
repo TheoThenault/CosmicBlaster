@@ -10,7 +10,7 @@ public class SpawnAsteroids : MonoBehaviour
 
     public int MaxAsteroidCount = 10;
 
-    public EnemySpaceshipMovement AsteroidPrefab = null;
+    public AsteroidMovement AsteroidPrefab = null;
 
     // Start is called before the first frame update
     IEnumerator Start()

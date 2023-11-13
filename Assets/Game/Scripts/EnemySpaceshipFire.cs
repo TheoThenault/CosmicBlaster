@@ -39,7 +39,7 @@ public class EnemySpaceshipFire : MonoBehaviour
                     {
                         newBullet.SetActive(true);
                         EnemyBulletBehavior behavior = newBullet.GetComponent<EnemyBulletBehavior>();
-                        behavior.Init(this.AsteroidsManager);
+
                         PlayFireSound();
                     }
                 }

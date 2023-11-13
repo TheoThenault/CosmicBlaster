@@ -23,6 +23,7 @@ public class SpaceshipCollision : MonoBehaviour
 
     public void HandleCollisions(Collision collision)
     {
+        Debug.Log("Spaceship POV: " + collision.gameObject.tag);
         if (!m_spaceshipDestroyed && collision != null && collision.gameObject != null && collision.gameObject.tag == "Asteroid")
         {
 
@@ -48,6 +49,29 @@ public class SpaceshipCollision : MonoBehaviour
 
                         Destroy(this.gameObject);
                     }
+                }
+            }
+        }
+
+        if (!m_spaceshipDestroyed && collision != null && collision.gameObject != null && collision.gameObject.tag == "EnemyBullet")
+        {
+            if (playerStatistics != null)
+            {
+                playerStatistics.removeHealth();
+
+                if (playerStatistics.IsDead())
+                {
+                    m_spaceshipDestroyed = true;
+
+                    if (Explosion != null)
+                    {
+                        Instantiate(Explosion, transform.position, transform.rotation);
+
+                        if (ExplosionSound != null)
+                            Instantiate(ExplosionSound, transform.position, transform.rotation).PlayDelayed(0.1f);
+                    }
+
+                    Destroy(this.gameObject);
                 }
             }
         }

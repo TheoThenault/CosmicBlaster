@@ -989,6 +989,7 @@ MonoBehaviour:
   BulletVelocity: 10
   MaxDistance: 1000
   Spaceship: {fileID: 8223565558061040278}
+  EnemySpaceship: {fileID: 0}
   AsteroidsManager: {fileID: 0}
 --- !u!1 &5890226801137874263
 GameObject:
@@ -1340,7 +1341,7 @@ GameObject:
   - component: {fileID: 5613432998545121302}
   m_Layer: 0
   m_Name: StarSparrow16
-  m_TagString: Untagged
+  m_TagString: EnemySpaceship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1424,7 +1425,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75caedafaad9fa4194d947418ae2ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AsteroidsManager: {fileID: 0}
   Explosion: {fileID: 6628867199803465035, guid: 7771e9683a79ffe48969d8efc53c4abf, type: 3}
   ExplosionSound: {fileID: 6551824671523840323, guid: c013cc93f95bb044fa9724479cf28a11, type: 3}
 --- !u!114 &5613432998545121302
@@ -1441,7 +1441,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 5633147729958021055}
   FiringDelay: 0.5
-  AsteroidsManager: {fileID: 0}
   FireSound: {fileID: 496694881829868564, guid: ede47e59fe7758540b2048e2bbee563e, type: 3}
 --- !u!1 &8620173133713282904
 GameObject:
