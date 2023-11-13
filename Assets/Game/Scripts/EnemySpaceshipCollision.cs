@@ -10,12 +10,13 @@ public class EnemySpaceshipCollision : MonoBehaviour
 
     private bool m_spaceshipDestroyed = false;
 
+    public int health = 3;
+
     // Start is called before the first frame update
     void Start()
     {
 
     }
-
 
     public void HandleCollisions(Collision collision)
     {
@@ -23,7 +24,10 @@ public class EnemySpaceshipCollision : MonoBehaviour
         {
             if(collision.gameObject.tag == "Bullet")
             {
-                // 3 balles pour tuer ? 
+                health--;
+
+                if (health > 0)
+                    return;
             }
 
             Destroy(this.gameObject);
