@@ -23,7 +23,6 @@ public class SpaceshipCollision : MonoBehaviour
 
     public void HandleCollisions(Collision collision)
     {
-        Debug.Log("Spaceship POV: " + collision.gameObject.tag);
         if (!m_spaceshipDestroyed && collision != null && collision.gameObject != null && collision.gameObject.tag == "Asteroid")
         {
 

@@ -1384,7 +1384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnRate: 1
-  MaxAsteroidCount: 0
+  MaxAsteroidCount: 20
   AsteroidPrefab: {fileID: 3876299068861579772, guid: 48117c8bfae9c4a4189b34da65d67840, type: 3}
 --- !u!1 &934281178 stripped
 GameObject:
@@ -2829,6 +2829,10 @@ PrefabInstance:
     - target: {fileID: 724209907222236384, guid: f46653d68d5534944bcb8baf69ea7ab5, type: 3}
       propertyPath: m_TagString
       value: EnemySpaceship
+      objectReference: {fileID: 0}
+    - target: {fileID: 1084242694628128736, guid: f46653d68d5534944bcb8baf69ea7ab5, type: 3}
+      propertyPath: EnemySpeed
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2369210378591939738, guid: f46653d68d5534944bcb8baf69ea7ab5, type: 3}
       propertyPath: m_TagString

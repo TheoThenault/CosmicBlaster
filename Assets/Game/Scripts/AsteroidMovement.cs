@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class AsteroidMovement : MonoBehaviour
 {
-    public float AsteroidSpeed = 0.01f;
+    public float AsteroidSpeed = 0.03f;
 
-    public float StartPosition = 120f;
+    public float StartPosition = 360f;
 
     public float MinimalPositionOnX = -12f;
     public float MaximalPositionOnX = 12f;
