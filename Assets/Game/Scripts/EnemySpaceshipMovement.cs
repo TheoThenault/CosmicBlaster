@@ -25,6 +25,8 @@ public class EnemySpaceshipMovement : MonoBehaviour
     private float directionDuration = 0f;
     private float lastDirectionChange = 0f;
 
+    private EnemyManager enemyManager = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,11 @@ public class EnemySpaceshipMovement : MonoBehaviour
 
         m_movement.Set(direction, 0f, 0f);
         m_movement.Normalize();
+    }
+
+    public void Init (EnemyManager em)
+    {
+        enemyManager = em;
     }
 
     // Update is called once per frame
@@ -65,7 +72,7 @@ public class EnemySpaceshipMovement : MonoBehaviour
 
         if (pos.z < -20)
         {
-            Destroy(this.gameObject);
+            enemyManager.DestroyEnemy(this.gameObject);
         }
     }
 

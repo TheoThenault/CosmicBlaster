@@ -35,6 +35,10 @@ public class EnemyManager : MonoBehaviour
                 var newEnemyCollisionHandler = newEnemy.GetComponent<EnemySpaceshipCollision>();
                 if (newEnemyCollisionHandler != null)
                     newEnemyCollisionHandler.Init(this);
+
+                var newEnemyMovement = newEnemy.GetComponent<EnemySpaceshipMovement>();
+                if (newEnemyMovement != null)
+                    newEnemyMovement.Init(this);
                 EnemyCount++;
             }
         }
