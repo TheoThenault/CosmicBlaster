@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8719821304280321359}
   - component: {fileID: 5805557138020522327}
   - component: {fileID: 7963395131854495052}
+  - component: {fileID: 2282619050475405074}
   m_Layer: 0
   m_Name: Collider3
   m_TagString: EnemySpaceship
@@ -69,6 +70,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &2282619050475405074
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319979971225965965}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &724209907222236384
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +160,7 @@ GameObject:
   - component: {fileID: 4312645976743883881}
   - component: {fileID: 3791095143660721671}
   - component: {fileID: 5294864152158481656}
+  - component: {fileID: 4354456573211766279}
   m_Layer: 0
   m_Name: Collider2
   m_TagString: EnemySpaceship
@@ -190,6 +219,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &4354456573211766279
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2369210378591939738}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2535136549680335180
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +257,7 @@ GameObject:
   - component: {fileID: 6772784664376488643}
   - component: {fileID: 7731814727086918795}
   - component: {fileID: 419551760861691669}
+  - component: {fileID: 3810423154211553114}
   m_Layer: 0
   m_Name: Collider12
   m_TagString: EnemySpaceship
@@ -259,6 +316,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &3810423154211553114
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2535136549680335180}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2624506322510330514
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +354,7 @@ GameObject:
   - component: {fileID: 6452737753294801684}
   - component: {fileID: 2972306409866642801}
   - component: {fileID: 2338205508318367131}
+  - component: {fileID: 1409173052233643658}
   m_Layer: 0
   m_Name: Collider19
   m_TagString: EnemySpaceship
@@ -326,6 +411,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &1409173052233643658
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2624506322510330514}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2901167805448074282
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +449,7 @@ GameObject:
   - component: {fileID: 4743487079453697570}
   - component: {fileID: 8045864964029540149}
   - component: {fileID: 2411160172400959728}
+  - component: {fileID: 3173186816271544120}
   m_Layer: 0
   m_Name: Collider17
   m_TagString: EnemySpaceship
@@ -393,6 +506,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &3173186816271544120
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2901167805448074282}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2953412967064392513
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +544,7 @@ GameObject:
   - component: {fileID: 4811074975322454996}
   - component: {fileID: 7378999470555189946}
   - component: {fileID: 8750928959147788061}
+  - component: {fileID: 6633491949403526759}
   m_Layer: 0
   m_Name: Collider1
   m_TagString: EnemySpaceship
@@ -462,6 +603,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &6633491949403526759
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2953412967064392513}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3497207527507623090
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,6 +641,7 @@ GameObject:
   - component: {fileID: 3771672561015812550}
   - component: {fileID: 8975197243725525272}
   - component: {fileID: 2772211033142451169}
+  - component: {fileID: 8679711855108996296}
   m_Layer: 0
   m_Name: Collider18
   m_TagString: EnemySpaceship
@@ -529,6 +698,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &8679711855108996296
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3497207527507623090}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3508969477307009490
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,6 +736,7 @@ GameObject:
   - component: {fileID: 3482201945188424709}
   - component: {fileID: 1826338504291300305}
   - component: {fileID: 1872577764603030656}
+  - component: {fileID: 574722990208296129}
   m_Layer: 0
   m_Name: Collider5
   m_TagString: EnemySpaceship
@@ -596,6 +793,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &574722990208296129
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3508969477307009490}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3526015167805522038
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,6 +831,7 @@ GameObject:
   - component: {fileID: 2730871124399093389}
   - component: {fileID: 7378137202906785723}
   - component: {fileID: 3749465007649878465}
+  - component: {fileID: 7937156331668070158}
   m_Layer: 0
   m_Name: Collider15
   m_TagString: EnemySpaceship
@@ -663,6 +888,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &7937156331668070158
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3526015167805522038}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3661893149448351794
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,6 +926,7 @@ GameObject:
   - component: {fileID: 7965652397295442802}
   - component: {fileID: 8549495385371023751}
   - component: {fileID: 7389142386763991494}
+  - component: {fileID: 2891654796234972959}
   m_Layer: 0
   m_Name: Collider21
   m_TagString: EnemySpaceship
@@ -730,6 +983,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &2891654796234972959
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661893149448351794}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3924425316742609327
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,6 +1021,7 @@ GameObject:
   - component: {fileID: 8924668828759069415}
   - component: {fileID: 5205318354092980895}
   - component: {fileID: 8628122850661716462}
+  - component: {fileID: 8865734290888954282}
   m_Layer: 0
   m_Name: Collider13
   m_TagString: EnemySpaceship
@@ -799,6 +1080,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &8865734290888954282
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3924425316742609327}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3986059578375389892
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +1118,7 @@ GameObject:
   - component: {fileID: 1257703080009236827}
   - component: {fileID: 1842456090718295065}
   - component: {fileID: 2291246334436635821}
+  - component: {fileID: 1866507689720592338}
   m_Layer: 0
   m_Name: Collider20
   m_TagString: EnemySpaceship
@@ -866,6 +1175,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &1866507689720592338
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3986059578375389892}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5633147729958021055
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,7 +1323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d24f042844926449a6f7bcfaccc2d11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletVelocity: 0.3
+  BulletVelocity: 1
   MaxDistance: 1000
   Spaceship: {fileID: 0}
   EnemySpaceship: {fileID: 8223565558061040278}
@@ -1029,6 +1365,7 @@ GameObject:
   - component: {fileID: 4208039438360748340}
   - component: {fileID: 6277617028051054740}
   - component: {fileID: 7655157742899293623}
+  - component: {fileID: 2000050329597611286}
   m_Layer: 0
   m_Name: Collider6
   m_TagString: EnemySpaceship
@@ -1085,6 +1422,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &2000050329597611286
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5890226801137874263}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6174879836151141885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,6 +1460,7 @@ GameObject:
   - component: {fileID: 2280155098500056587}
   - component: {fileID: 8047711316538305528}
   - component: {fileID: 8199673182736114821}
+  - component: {fileID: 6718580971547929862}
   m_Layer: 0
   m_Name: Collider7
   m_TagString: EnemySpaceship
@@ -1152,6 +1517,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &6718580971547929862
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6174879836151141885}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6316951555577333559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1555,7 @@ GameObject:
   - component: {fileID: 5086900580593732677}
   - component: {fileID: 7432122926553888704}
   - component: {fileID: 2900164925966098865}
+  - component: {fileID: 8077782949603283481}
   m_Layer: 0
   m_Name: Collider4
   m_TagString: EnemySpaceship
@@ -1219,6 +1612,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &8077782949603283481
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6316951555577333559}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7086803908448106580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,6 +1650,7 @@ GameObject:
   - component: {fileID: 1319171940431542096}
   - component: {fileID: 5976662715984767361}
   - component: {fileID: 8557390410766207788}
+  - component: {fileID: 3511085911629316356}
   m_Layer: 0
   m_Name: Collider9
   m_TagString: EnemySpaceship
@@ -1286,6 +1707,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &3511085911629316356
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7086803908448106580}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7180763788603239591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,6 +1745,7 @@ GameObject:
   - component: {fileID: 8302862096063291759}
   - component: {fileID: 2630541909975713229}
   - component: {fileID: 5313302715435589342}
+  - component: {fileID: 6272897606809920439}
   m_Layer: 0
   m_Name: Collider14
   m_TagString: EnemySpaceship
@@ -1353,6 +1802,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &6272897606809920439
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7180763788603239591}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8223565558061040278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,7 +1945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 5633147729958021055}
-  FiringDelay: 0.5
+  FiringDelay: 2
   FireSound: {fileID: 496694881829868564, guid: ede47e59fe7758540b2048e2bbee563e, type: 3}
 --- !u!114 &1084242694628128736
 MonoBehaviour:
@@ -1483,8 +1959,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfe50fdec6138694b93ff10226720a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyLateralSpeed: 0
-  EnemyLongitudinalSpeed: 0.02
+  EnemyLateralSpeed: 0.05
+  EnemyLongitudinalSpeed: 0.1
   targetRotationAngleWhenTurning: 45
   rotationTime: 0.3
   StartPosition: 360
@@ -1502,6 +1978,7 @@ GameObject:
   - component: {fileID: 8757633923699013878}
   - component: {fileID: 2967173671626093713}
   - component: {fileID: 3632839255491145482}
+  - component: {fileID: 6380443026577278515}
   m_Layer: 0
   m_Name: Collider10
   m_TagString: EnemySpaceship
@@ -1558,6 +2035,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &6380443026577278515
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8620173133713282904}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &9092506555264801375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +2073,7 @@ GameObject:
   - component: {fileID: 8438845209407851430}
   - component: {fileID: 5476082330582163999}
   - component: {fileID: 4183587048675385648}
+  - component: {fileID: 4799979035864051839}
   m_Layer: 0
   m_Name: Collider16
   m_TagString: EnemySpaceship
@@ -1625,6 +2130,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &4799979035864051839
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9092506555264801375}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &9174136743338819901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +2168,7 @@ GameObject:
   - component: {fileID: 9051843672293578876}
   - component: {fileID: 1075767224998843486}
   - component: {fileID: 7913170143584782345}
+  - component: {fileID: 2044572256675172354}
   m_Layer: 0
   m_Name: Collider8
   m_TagString: EnemySpaceship
@@ -1692,6 +2225,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &2044572256675172354
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9174136743338819901}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &9222576912822096151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,6 +2263,7 @@ GameObject:
   - component: {fileID: 520057726087511924}
   - component: {fileID: 876437737724391809}
   - component: {fileID: 6644391230528125599}
+  - component: {fileID: 6023520528457019414}
   m_Layer: 0
   m_Name: Collider11
   m_TagString: EnemySpaceship
@@ -1759,3 +2320,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spaceship: {fileID: 5539010446705463450}
+--- !u!54 &6023520528457019414
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9222576912822096151}
+  serializedVersion: 4
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

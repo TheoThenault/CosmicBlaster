@@ -25,7 +25,8 @@ public class EnemySpaceshipCollision : MonoBehaviour
 
     public void HandleCollisions(Collision collision)
     {
-        if (collision != null && collision.gameObject != null && collision.gameObject.tag != "EnemyBullet" && collision.gameObject.tag != "Asteroid")
+        if (collision != null && collision.gameObject != null && collision.gameObject.tag != "EnemyBullet" && collision.gameObject.tag != "Asteroid"
+            && collision.gameObject.tag != "EnemySpaceship")
         {
             if(collision.gameObject.tag == "Bullet")
             {
