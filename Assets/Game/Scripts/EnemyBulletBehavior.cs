@@ -6,7 +6,7 @@ using UnityEngine.InputSystem.Controls;
 
 public class EnemyBulletBehavior : MonoBehaviour
 {
-    public float BulletVelocity = 10f;
+    public float BulletVelocity = 100f;
 
     public float MaxDistance = 1000f;
 
@@ -40,11 +40,11 @@ public class EnemyBulletBehavior : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(m_transform != null) 
         { 
-            m_transform.Translate(new Vector3(0f, 1f, 0f) * 0.1f);
+            m_transform.Translate(new Vector3(0f, 1f, 0f) * BulletVelocity);
 
             if(Spaceship != null)
             {

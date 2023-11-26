@@ -38,16 +38,17 @@ public class SpaceshipMovement : MonoBehaviour
 
     void Update()
     {
-        Vector3 pos = SpaceshipTransform.position;
+        Vector3 pos = m_movement * SpaceshipSpeedModifier;
 
-        pos += m_movement * SpaceshipSpeedModifier;
+        pos.y = 0;
+        SpaceshipTransform.Translate(pos);
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
 
-        if (pos.x > MaximalPositionOnX)
-            pos.Set(MaximalPositionOnX, 0f, 0f);
-        if (pos.x < MinimalPositionOnX)
-            pos.Set(MinimalPositionOnX, 0f, 0f);
+        if (transform.position.x > MaximalPositionOnX)
+            transform.position = new Vector3(MaximalPositionOnX, 0, transform.position.z);
+        if (transform.position.x < MinimalPositionOnX)
+            transform.position = new Vector3(MinimalPositionOnX, 0, transform.position.z);
 
-        SpaceshipTransform.position = pos;
     }
 
 }

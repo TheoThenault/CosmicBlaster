@@ -11,7 +11,7 @@ public class EnemySpaceshipMovement : MonoBehaviour
 
     public float EnemyLateralSpeed = 0.05f;
 
-    public float EnemyLongitudinalSpeed = 0.1f;
+    public float EnemyLongitudinalSpeed = 1f;
 
     public float targetRotationAngleWhenTurning = 45f;
     public float rotationTime = 0.3f;
@@ -45,6 +45,25 @@ public class EnemySpaceshipMovement : MonoBehaviour
 
         m_movement.Set(direction, 0f, 0f);
         m_movement.Normalize();
+
+        chooseDirection();
+
+        Vector3 pos = new Vector3(0, 0, EnemyLongitudinalSpeed);
+        pos +=  m_movement * EnemyLateralSpeed;
+
+        pos.y = 0;
+        transform.Translate(pos);
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+
+        if (transform.position.x > MaximalPositionOnX)
+            transform.position = new Vector3(MaximalPositionOnX, 0, transform.position.z);
+        if (transform.position.x < MinimalPositionOnX)
+            transform.position = new Vector3(MinimalPositionOnX, 0, transform.position.z);
+
+        if (transform.position.z < -20)
+        {
+            enemyManager.DestroyEnemy(this.gameObject);
+        }
     }
 
     public void Init (EnemyManager em)
@@ -55,25 +74,7 @@ public class EnemySpaceshipMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        chooseDirection();
 
-        Vector3 pos = transform.position;
-
-        pos.Set(pos.x, pos.y, pos.z - EnemyLongitudinalSpeed);
-
-        pos += m_movement * EnemyLateralSpeed;
-
-        if (pos.x > MaximalPositionOnX)
-            pos.Set(MaximalPositionOnX, transform.position.y, transform.position.z);
-        if (pos.x < MinimalPositionOnX)
-            pos.Set(MinimalPositionOnX, transform.position.y, transform.position.z);
-
-        transform.position = pos;
-
-        if (pos.z < -20)
-        {
-            enemyManager.DestroyEnemy(this.gameObject);
-        }
     }
 
 

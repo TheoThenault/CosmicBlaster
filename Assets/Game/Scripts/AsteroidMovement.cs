@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AsteroidMovement : MonoBehaviour
 {
-    public float AsteroidSpeed = 0.03f;
+    public float AsteroidSpeed = 0.3f;
 
     public float StartPosition = 360f;
 
@@ -35,13 +35,15 @@ public class AsteroidMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        Vector3 pos = transform.position;
-        pos.Set(pos.x, pos.y, pos.z - AsteroidSpeed);
-        transform.position = pos;
+        Vector3 pos = new Vector3(0, 0, AsteroidSpeed);
+        transform.Translate(pos);
 
-        if(pos.z < -20)
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+
+
+        if (transform.position.z < -20)
         {
             if (AsteroidsManager != null)
             {
