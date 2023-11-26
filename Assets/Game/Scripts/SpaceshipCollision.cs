@@ -15,12 +15,20 @@ public class SpaceshipCollision : MonoBehaviour
 
     private bool m_spaceshipDestroyed = false;
 
+    private Renderer m_renderer = null;
+
     // Start is called before the first frame update
     void Start()
     {
+        m_renderer = GetComponent<Renderer>();
         playerStatistics = GetComponent<PlayerStatistics>();
+        m_renderer.enabled = true;
     }
 
+    private void destroyShip()
+    {
+        m_renderer.enabled = false;
+    }
 
     public void HandleCollisions(Collision collision)
     {
@@ -47,7 +55,7 @@ public class SpaceshipCollision : MonoBehaviour
                                 Instantiate(ExplosionSound, transform.position, transform.rotation).PlayDelayed(0.1f);
                         }
 
-                        Destroy(this.gameObject);
+                        destroyShip();
                     }
                 }
             }
@@ -71,7 +79,7 @@ public class SpaceshipCollision : MonoBehaviour
                             Instantiate(ExplosionSound, transform.position, transform.rotation).PlayDelayed(0.1f);
                     }
 
-                    Destroy(this.gameObject);
+                    destroyShip();
                 }
             }
         }
@@ -93,7 +101,7 @@ public class SpaceshipCollision : MonoBehaviour
                         Instantiate(ExplosionSound, transform.position, transform.rotation).PlayDelayed(0.1f);
                 }
 
-                Destroy(this.gameObject);
+                destroyShip();
             }
         }
     }
