@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69b5a0e978840b647a894d1ee2301a8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AsteroidSpeed: 0.03
+  AsteroidSpeed: 0.5
   StartPosition: 360
   MinimalPositionOnX: -12
   MaximalPositionOnX: 12

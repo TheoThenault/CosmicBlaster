@@ -37,10 +37,7 @@ public class AsteroidMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector3 pos = new Vector3(0, 0, AsteroidSpeed);
-        transform.Translate(pos);
-
-        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z - AsteroidSpeed);
 
 
         if (transform.position.z < -20)
